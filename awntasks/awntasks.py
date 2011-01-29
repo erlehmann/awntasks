@@ -32,6 +32,7 @@ class pluginAwnTasks:
         self.requester = self.plugin_api.get_requester()
         self.requester.connect("task-added", self.onTaskAdded)
         self.requester.connect("task-deleted", self.onTaskDeleted)
+        self.requester.connect("task-modified", self.onTaskModified)
 
         self._update_()
 
@@ -45,4 +46,7 @@ class pluginAwnTasks:
         self._update_()
 
     def onTaskDeleted(self, requester, tid):
+        self._update_()
+
+    def onTaskModified(self, requester, tid):
         self._update_()
