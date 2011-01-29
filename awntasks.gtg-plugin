@@ -1,0 +1,9 @@
+[GTG Plugin]
+Module=awntasks
+Name="AWN Tasks"
+Description="Lists number of open tasks on Avant Window Navigator panel icon"
+Authors="Nils Dagsson Moskopp <nils@dieweltistgarnichtso.net>"
+Version=0.1
+Dependencies=
+Dbus-dependencies=com.google.code.Awn:/com/google/code/Awn
+Enabled=False

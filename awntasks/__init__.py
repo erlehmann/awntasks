@@ -1,0 +1,1 @@
+from awntasks import pluginAwnTasks
